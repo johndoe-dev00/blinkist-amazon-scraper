@@ -1,6 +1,7 @@
 # blinkist-amazon-scraper
-No idea which one of the 4500+ blinkist books to read next?
-Choose by Amazon reviews!
+Takes the output from blinkist-scraper, gets the amazon reviews and outputs as html.
+The actual html output can be found here:  
+https://github.com/johndoe-dev00/blinkist-books-sorted-by-amazon-reviews
 
 ## Requirements
 * Linux + Docker  
