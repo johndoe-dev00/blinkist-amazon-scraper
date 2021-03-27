@@ -1,5 +1,5 @@
 # blinkist-amazon-scraper
-Takes the output from blinkist-scraper, gets the amazon reviews and outputs as html.
+Takes the output from blinkist-scraper, gets the amazon reviews and outputs as html.  
 The actual html output can be found here:  
 https://github.com/johndoe-dev00/blinkist-books-sorted-by-amazon-reviews
 
