@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html>
+<head>
+  <title>Overview - All categories</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+  </style>
+</head>
+
+
+<body>
+  <h1>Categories</h1>
+  <table>
+    <tr>
+      <th>Category Name</th>
+      <th>Languages</th>
+      <th>Books</th>
+    </tr>
+    {% for category in categories %}
+    <tr>
+      <td>{{ category['name'] }}</td>
+      <td><a href="{{category['url']}}.html">all</a> /
+          <a href="{{category['url']}}-en.html">en</a> /
+          <a href="{{category['url']}}-de.html">de</a></td>
+      <td>{{ category['books'] }}</td>
+    </tr>
+    {% endfor %}
+    <tr>
+      <td>Total number of books</td>
+      <td>{{ total }}</td>
+    </tr>
+  </table> 
+</body>
+</html>
