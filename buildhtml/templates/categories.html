@@ -17,22 +17,18 @@
   <table>
     <tr>
       <th>Category Name</th>
-      <th>Languages</th>
-      <th>Books</th>
+      <th>All</th>
+      <th>En</th>
+      <th>De</th>
     </tr>
     {% for category in categories %}
     <tr>
       <td>{{ category['name'] }}</td>
-      <td><a href="{{category['url']}}.html">all</a> /
-          <a href="{{category['url']}}-en.html">en</a> /
-          <a href="{{category['url']}}-de.html">de</a></td>
-      <td>{{ category['books'] }}</td>
+      <td><a href="{{category['url_all']}}.html">all</a>({{category['books_all']}})</td>
+      <td><a href="{{category['url_en']}}.html">en</a>({{category['books_en']}})</td>
+      <td><a href="{{category['url_de']}}.html">de</a>({{category['books_de']}})</td>
     </tr>
     {% endfor %}
-    <tr>
-      <td>Total number of books</td>
-      <td>{{ total }}</td>
-    </tr>
   </table> 
 </body>
 </html>

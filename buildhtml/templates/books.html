@@ -21,17 +21,15 @@
       <th>Title</th>
       <th>amz-num</th>
       <th>amz-avg</th>
+      <th>Links</th>
     </tr>
     {% for book in books %}
     <tr>
       <td>{{ book['author'] }}</td>
-      <td>{{ book['title'] }}
-          {% if book['subtitle']  %}
-          - {{ book['subtitle'] }}
-          {% endif %}
-           </td>
-      <td>{{ book['amz-num'] }}</td>
-      <td>{{ book['amz-avg'] }}</td>
+      <td>{{ book['title'] }}{% if book['subtitle']  %}-{{ book['subtitle'] }}{% endif %}</td>
+      <td>{{ book['amazon_num'] }}</td>
+      <td>{{ book['amazon_avg'] }}</td>
+      <td><a href="{{ book['amazon_url'] }}">Amazon</a></td>
     </tr>
     {% endfor %}
   </table> 

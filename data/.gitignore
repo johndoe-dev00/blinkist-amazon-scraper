@@ -1,1 +1,8 @@
-*.pickle
+.ipynb_checkpoints
+books.json
+00_dump
+01_fixed-category
+02_applied-manual-fixes
+03_with-amazon-id
+04_scraped-with-review
+books.json
